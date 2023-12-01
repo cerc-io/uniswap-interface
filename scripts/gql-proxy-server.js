@@ -23,7 +23,7 @@ const graphqlProxy = createProxyMiddleware({
   },
   logLevel: 'debug', // Set log level as needed,
   onProxyReq: (proxyReq) => {
-    proxyReq.setHeader('Origin', ORIGIN_HEADER) // Set origin as localhost
+    proxyReq.setHeader('Origin', ORIGIN_HEADER)
   },
 })
 
